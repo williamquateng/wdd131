@@ -1,9 +1,8 @@
 /* Global Styles */
-
 * {
   box-sizing: border-box;
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -12,17 +11,16 @@ body {
 }
 
 /* Header Styles */
-
 header {
   background-color: #7226f5;
   color: #fff;
   padding: 1em;
   text-align: center;
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 #course-title {
-  display: grid;
+  display: block;
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -35,7 +33,7 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease 0.2s;
 }
 
 nav a:hover {
@@ -43,12 +41,12 @@ nav a:hover {
 }
 
 /* Main Content Styles */
-
 main {
-  max-width: max-content;
+  max-width: 800px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* ... */
+  gap: 2em;
 }
 
 .card {
@@ -62,11 +60,10 @@ main {
 .card img {
   width: 100%;
   height: auto;
-  margin-bottom: 10em;
+  margin-bottom: 1em;
 }
 
 /* Footer Styles */
-
 footer {
   background-color: #5437e8;
   color: #fff;
@@ -76,29 +73,9 @@ footer {
 }
 
 /* Responsive Design */
-
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
   }
-
 }
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    max-width: 100%;
-    height: auto;
-}
-
 
