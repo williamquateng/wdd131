@@ -7,10 +7,9 @@
 }
 
 body {
-    font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    }
+  font-family: 'Open Sans', sans-serif;
+  /* ... */
+}
 
 /* Header Styles */
 
@@ -23,7 +22,7 @@ header {
 }
 
 #course-title {
-  display: block;
+  display: grid;
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -46,11 +45,10 @@ nav a:hover {
 /* Main Content Styles */
 
 main {
-  max-width: 500px;
-  margin: 1em auto;
-  display: left;
+  max-width: max-content;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  /* ... */
 }
 
 .card {
