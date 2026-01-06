@@ -1,0 +1,20 @@
+/* temples-large.css */
+/* Apply styles for large screens (768px and up) */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* Additional styles for large screens can be added here */
