@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container {
+  width: 420px;
+  background-color: #111111;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-header {
+  background-color: #941ae6;
+  color: #f5f3f3;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+form {
+  padding: 20px;
+  background-color: #9e9a9a;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.rating-stars input[type="radio"] {
+  display: none;
+}
+
+.rating-stars label {
+  font-size: 22px;
+  color: #ccc;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.rating-stars input[type="radio"]:checked ~ label {
+  color: #000;
+}
+
+.checkbox-label {
+  display: inline;
+  margin-left: 6px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #d5d5d5;
+}
+
+.footer {
+  background-color: #8409f7;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
