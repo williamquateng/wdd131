@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Product review form for users to submit their feedback on a product, including product name, rating, installation date, useful features, written review, and user name.">
+  <meta name="description" content="Submit your product review: rate, date installed, features, and feedback.">
   <meta name="author" content="Williams Quateng">
   <meta property="og:title" content="Product Review Form">
   <title>Product Review Form</title>
-  <script src="scripts/form.js"></script>
+  <script src="scripts/form.js" defer></script>
   <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
+  <header></header>
   <div class="form-container">
     <div class="form-header">Product Review</div>
     <form method="get" action="review.html">
@@ -48,17 +49,19 @@
       <input type="checkbox" id="feature-4" name="features" value="Design">
       <label for="feature-4" class="checkbox-label">Design</label>
 
-      <label for="written-review">Written Review <span style="font-weight:normal; color:#666;">(Optional)</span></label>
+      <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
       <textarea id="written-review" name="written-review" rows="4"></textarea>
 
-      <label for="user-name">Your Name <span style="font-weight:normal; color:#666;">(Optional)</span></label>
+      <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
       <input type="text" id="user-name" name="user-name">
 
       <input type="submit" value="Post Review">
     </form>
     <div class="footer">
-       <p>&copy;2026 <span id="copyright-year"></span>Williams Quateng</p>
-        <p><span id="last-modified"></span></p>  
+      <footer>
+        <p>&copy;2026 <span id="copyright-year"></span>Williams Quateng</p>
+        <p><span id="last-modified"></span></p>
+      </footer>
   </div>
 </body>
 </html>
