@@ -15,13 +15,15 @@ contactForm.addEventListener('submit', handleSubmit);
 // Functions
 function handleSubmit(e) {
   e.preventDefault();
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
 
   // Simple validation
-  if (name && email && message) {
-    alert(`Thanks, ${name}! Your message has been sent.`);
+  if (formData.name && formData.email && formData.message) {
+    alert(`Thanks, ${formData.name}! Your message has been sent.`);
     contactForm.reset();
   } else {
     alert('Please fill in all fields.');
