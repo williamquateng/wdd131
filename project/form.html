@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +20,6 @@
         <option value="" disabled selected>Select a Product ...</option>
         <!-- options will be populated by JS -->
       </select>
-
       <label>Overall Rating</label>
       <div class="rating-stars">
         <input type="radio" id="rating-1" name="rating" value="1" required>
@@ -35,10 +33,8 @@
         <input type="radio" id="rating-5" name="rating" value="5" required>
         <label for="rating-5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
       </div>
-
       <label for="date-installed">Date of Installation</label>
       <input type="date" id="date-installed" name="date-installed" required>
-
       <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
       <input type="checkbox" id="feature-1" name="features" value="Durability">
       <label for="feature-1" class="checkbox-label">Durability</label><br>
@@ -48,21 +44,22 @@
       <label for="feature-3" class="checkbox-label">Performance</label><br>
       <input type="checkbox" id="feature-4" name="features" value="Design">
       <label for="feature-4" class="checkbox-label">Design</label>
-
       <label for="written-review">Written Review <span class="optional">(Optional)</span></label>
       <textarea id="written-review" name="written-review" rows="4"></textarea>
-
       <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
       <input type="text" id="user-name" name="user-name">
-
       <input type="submit" value="Post Review">
     </form>
-    <div class="footer">
-      <footer>
-        <p>&copy;2026 <span id="copyright-year"></span>Williams Quateng</p>
-        <p><span id="last-modified"></span></p>
-      </footer>
-   </form>
+    <div class="form-footer">
+      <p>&copy;2026 Williams Quateng</p>
+      <p id="review-count"></p>
+    </div>
+  </div>
+  <div class="footer">
+    <footer>
+      <p><span id="last-modified"></span></p>
+    </footer>
   </div>
 </body>
 </html>
+

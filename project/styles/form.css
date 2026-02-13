@@ -100,13 +100,6 @@ input[type="submit"]:hover {
   color: #0f0d0d;
 }
 
-.footer {
-  background-color: #8409f7;
-  color: #f8f1f1;
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
-}
 
 @media (max-width: 600px) {
   .form-container {
@@ -115,4 +108,15 @@ input[type="submit"]:hover {
   .rating-stars {
     flex-direction: column;
   }
+}
+
+.form-footer {
+  background-color: #941ae6; /* purple */
+  color: #ffffff; /* white text */
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-top: 2px solid #fff;
+  margin-top: 10px;
 }
